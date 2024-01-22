@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment three</title>
+
+    <!------------------ 
+    Tailwindcss
+    -------------------->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="container mx-0">
+
+
+    <header class="container w-72 ml-28">
+
+        <div class="navbar ">
+            <div class="flex-1">
+                <a class="btn btn-ghost text-xl">Hockey’s</a>
+            </div>
+
+            <div class="flex gap-10 mr-32 ml-8">
+                <a href=""><span class="text-rose-600">Home</span> </a>
+                <a href="">About</a>
+                <a href="">Pages</a>
+                <a href="">Blog</a>
+                <a href="">Contact</a>
+            </div>
+
+            <div class="flex-none gap-2">
+                <div class="form-control">
+                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                </div>
+                <div>
+                    <button class="btn btn-secondary text-lg">Secondary</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </header>
+
+    <section class="container ">
+        <div class="carousel m-32 h-96 rounded-xl">
+            <div id="slide1" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <div id="slide4" class="carousel-item relative w-full">
+                <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class=" bg-black text-slate-300 p-4 rounded-lg w-96 relative start-2/4 bottom-80">
+                <h1 class="text-lg ">Greetings and welcome!</h1>
+                <p> Get ready to witness a convergence of prowess and bravery as we
+                    present to you. </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- club section -->
+    <section class="club-section text-center">
+        <h1 class="text-4xl pb-3">Professional Hockeys Club</h1>
+        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam proin. </p>
+    </section>
+    <section class="program-section text-center	">
+        <h1 class="text-4xl pb-3">Program Sections</h1>
+        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            nullam proin. </p>
+
+        <div class="junior-teen-program grid grid-cols-2 ml-36">
+            <div class="junior-img w-3/4 h-96 bg-black p-6">
+                <h1 class="pb-3">Junior Program</h1>
+                <p>
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et
+                    in.
+                </p>
+            </div>
+            <div class="teen-img w-3/4 h-96 bg-black	p-6">
+                <h1 class="pb-3">Teenager Program</h1>
+                <p>
+                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et
+                    in.
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
