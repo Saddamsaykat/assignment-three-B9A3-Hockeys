@@ -1,6 +1,11 @@
-.junior-img {
-    background-image: url(./Images/2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+#slide1 {
+    z-index: -1;
+}
+
+#carusel-inner-text {
+    position: relative;
+    right: 20px;
+    bottom: 0;
+
+    z-index: 1;
 }

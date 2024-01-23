@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment three</title>
 
+    <!------------------
+        font Awesome
+     -------------------->
+    <script src="https://kit.fontawesome.com/5b6c81beaa.js" crossorigin="anonymous"></script>
+
+
+
     <!------------------ 
     Tailwindcss
     -------------------->
@@ -14,7 +21,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="container mx-0">
+<body>
 
 
     <header class="container w-72 ml-28">
@@ -44,78 +51,98 @@
         </div>
 
     </header>
+    <main>
+        <section class="container ">
+            <div class="carousel m-32 h-96 rounded-xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
 
-    <section class="container ">
-        <div class="carousel m-32 h-96 rounded-xl">
-            <div id="slide1" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a>
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-                </div>
+
+
             </div>
-            <div id="slide2" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
+            <!-- bottom-18 right-5 -->
+            <!-- <divabsolute left-96  sm:relative  sm:bottom-80 sm:right-40 -->
+            <!-- <div id="carusel-inner-text">
+                <div class=" bg-black text-slate-300 p-4 rounded-lg w-96 ">
+                    <h1 class="text-lg ">Greetings and welcome!</h1>
+                    <p> Get ready to witness a convergence of prowess and bravery as we
+                        present to you. </p>
+
                 </div>
-            </div>
-            <div id="slide3" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a>
-                    <a href="#slide4" class="btn btn-circle">❯</a>
-                </div>
-            </div>
-            <div id="slide4" class="carousel-item relative w-full">
-                <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                </div>
-            </div>
+            </div> -->
+
+        </section>
+
+
+
+    </main>
+
+    <footer class="flex gap-36 p-20 bg-black text-slate-300">
+
+        <div class="gap-4 ">
+            <h1 class="pb-4 text-lg">In Stadium</h1>
+            <p class="pb-4">Whether in sports, academia, or any other field, these extraordinary individuals inspire
+                with their feats
+                and contribute to the tapestry of success. Join us on a journey to meet the heroes from the field, where
+                greatness knows no bounds.</p>
+            <p class="pb-4"><span><i class="fa-solid fa-envelope"></i></span> mdshaikat965@gmail.com</p>
+            <p class="pb-4"><span><i class="fa-solid fa-phone"></i></span> +880 1761 79 64 80</p>
+
         </div>
-        <div class="container">
-            <div class=" bg-black text-slate-300 p-4 rounded-lg w-96 relative start-2/4 bottom-80">
-                <h1 class="text-lg ">Greetings and welcome!</h1>
-                <p> Get ready to witness a convergence of prowess and bravery as we
-                    present to you. </p>
-            </div>
+
+        <div>
+            <h2 class="text-lg">Company</h2>
+            <a href="">About Us</a>
+            <a href="">Leadership</a>
+            <a href="">Careers</a>
+            <a href="">News & Article</a>
+            <a href="">Legal Notice</a>
         </div>
 
-    </section>
-
-    <!-- club section -->
-    <section class="club-section text-center">
-        <h1 class="text-4xl pb-3">Professional Hockeys Club</h1>
-        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
-            nullam proin. </p>
-    </section>
-    <section class="program-section text-center	">
-        <h1 class="text-4xl pb-3">Program Sections</h1>
-        <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
-            nullam proin. </p>
-
-        <div class="junior-teen-program grid grid-cols-2 ml-36">
-            <div class="junior-img w-3/4 h-96 bg-black p-6">
-                <h1 class="pb-3">Junior Program</h1>
-                <p>
-                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et
-                    in.
-                </p>
-            </div>
-            <div class="teen-img w-3/4 h-96 bg-black	p-6">
-                <h1 class="pb-3">Teenager Program</h1>
-                <p>
-                    Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
-                    enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et
-                    in.
-                </p>
-            </div>
+        <div>
+            <h1>Support</h1>
+            <a href="">HelpCenter</a>
+            <a href="">FAQ</a>
+            <a href="">Ticket Support</a>
+            <a href="">Contact Us</a>
         </div>
-    </section>
+        <div>
+            <h1>Services</h1>
+            <a href="">Academy</a>
+            <a href="">Group Lesson</a>
+            <a href="">Private Lesson</a>
+            <a href="">Hockeys for kids</a>
+            <a href="">Hockeys for Adult</a>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
