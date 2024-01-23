@@ -27,36 +27,55 @@
 
 <body>
 
+    <header>
+        <div class=" container mx-auto lg:px-20 lg:pr-40 px-8 my-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
 
-    <header class="container w-72 ml-28">
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">Hockey<span class="text-red-400">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
 
-        <div class="navbar ">
-            <div class="flex-1">
-                <a class="btn btn-ghost text-xl">Hockey’s</a>
-            </div>
 
-            <div class="flex gap-10 mr-32 ml-8">
-                <a href=""><span class="text-rose-600">Home</span> </a>
-                <a href="">About</a>
-                <a href="">Pages</a>
-                <a href="">Blog</a>
-                <a href="">Contact</a>
-            </div>
 
-            <div class="flex-none gap-2">
-                <div class="form-control">
-                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                    </ul>
                 </div>
                 <div>
-                    <button class="btn btn-secondary text-lg">Secondary</button>
+
+                </div>
+
+                <div class="navbar-end gap-3 hidden lg:flex">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn btn-error">Get Ticket</a>
                 </div>
             </div>
-        </div>
-        </div>
 
+        </div>
     </header>
     <main>
-        <section class="container ">
+        <section class=" container ">
             <div class="carousel m-32 h-96 rounded-xl">
                 <div id="slide1" class="carousel-item relative w-full">
                     <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
@@ -67,7 +86,7 @@
                 </div>
                 <div id="slide2" class="carousel-item relative w-full">
                     <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <div class="absolute flex-col justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <a href="#slide3" class="btn btn-circle">❯</a>
                     </div>
@@ -88,18 +107,17 @@
                 </div>
 
 
+                <div id="carusel-inner-text">
+                    <div class=" bg-black text-slate-300 p-4 rounded-lg w-96 ">
+                        <h1 class="text-lg ">Greetings and welcome!</h1>
+                        <p> Get ready to witness a convergence of prowess and bravery as we
+                            present to you. </p>
+
+                    </div>
+                </div>
+
 
             </div>
-            <!-- bottom-18 right-5 -->
-            <!-- <divabsolute left-96  sm:relative  sm:bottom-80 sm:right-40 -->
-            <!-- <div id="carusel-inner-text">
-                <div class=" bg-black text-slate-300 p-4 rounded-lg w-96 ">
-                    <h1 class="text-lg ">Greetings and welcome!</h1>
-                    <p> Get ready to witness a convergence of prowess and bravery as we
-                        present to you. </p>
-
-                </div>
-            </div> -->
 
         </section>
 
@@ -115,7 +133,7 @@
 
         <!-- cycle section 3 -->
 
-        <section class="container block flex text-center items-center p-10 gap-20 ">
+        <section class=" container  flex text-center items-center p-10 gap-20 ">
             <div class="mt-4">
                 <div class="radial-progress  " style="--value:87;" role="progressbar">87%</div>
                 <h1 class="mt-4">Prayer Facility</h1>
@@ -147,8 +165,33 @@
 
 
         </section>
+        <!-- program Section -->
+        <section class="container ">
+
+            <div class=" text-center w-80 ">
+                <h1>Match Program Details</h1>
+                <h3>Match Program Details provides a comprehensive guide to the upcoming sports events, featuring
+                    fixtures,
+                    teams.</h3>
+            </div>
+
+            <div class=" flex-col">
+                <div class="bg-[url('./Images/2.png')] bg-no-repeat w-1/2 h-80 *:">
+                    <h1>Junior Program</h1>
+                    <p>Nurturing young talent, fostering passion, and building a foundation for future sports stars.</p>
+                    <button class="btn btn-error"> Register Now!</button>
+
+                </div>
+                <div class="bg-[url('./Images/2.png')] bg-no-repeat w-1/2 h-80 *:">
+                    <h1>Junior Program</h1>
+                    <p>Nurturing young talent, fostering passion, and building a foundation for future sports stars.</p>
+                    <button class="btn btn-error"> Register Now!</button>
+
+                </div>
+            </div>
 
 
+        </section>
 
     </main>
 
