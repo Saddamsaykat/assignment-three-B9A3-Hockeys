@@ -28,7 +28,7 @@
 <body>
 
     <header>
-        <div class=" container mx-auto lg:px-20 lg:pr-40 px-8 my-8">
+        <div class=" container mx-auto lg:px-24 px-8">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -46,9 +46,15 @@
                             <li><a>Blog</a></li>
                             <li><a>Contact</a></li>
 
+
                         </ul>
+
                     </div>
-                    <a class="btn btn-ghost text-xl">Hockey<span class="text-red-400">'</span>s</a>
+
+                    <div class="flex items-end">
+                        <a class="btn btn-ghost text-xl">Hockey<span class="text-red-400">'</span>s</a>
+                        <a class="btn btn-error  lg:hidden">Get Ticket</a>
+                    </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
@@ -61,6 +67,7 @@
 
 
                     </ul>
+
                 </div>
                 <div>
 
@@ -74,66 +81,75 @@
 
         </div>
     </header>
+
+
+
+
     <main>
-        <section class=" container ">
-            <div class="carousel m-32 h-96 rounded-xl">
-                <div id="slide1" class="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide4" class="btn btn-circle">❮</a>
-                        <a href="#slide2" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" class="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-                    <div class="absolute flex-col justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide1" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" class="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide4" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" class="carousel-item relative w-full">
-                    <img src="https://daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                        <a href="#slide3" class="btn btn-circle">❮</a>
-                        <a href="#slide1" class="btn btn-circle">❯</a>
-                    </div>
-                </div>
+        <!-- banner Section -->
+        <section>
+            <div class=" container mx-auto lg:px-24 px-8 ">
+                <div class="carousel w-full ">
+                    <div id="slide1"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./Images/1.png)] h-[85vh] bg-cover">
 
 
-                <div id="carusel-inner-text">
-                    <div class=" bg-black text-slate-300 p-4 rounded-lg w-96 ">
-                        <h1 class="text-lg ">Greetings and welcome!</h1>
-                        <p> Get ready to witness a convergence of prowess and bravery as we
-                            present to you. </p>
 
+                        <div class="absolute bottom-5 left-4  transform -translate-y-1/2">
+                            <a href="#slide3" class="btn btn-circle">❮</a>
+                            <a href="#slide2" class="btn btn-circle">❯</a>
+                        </div>
                     </div>
-                </div>
+                    <div id="slide2"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./Images/1.png)] h-[85vh]  bg-cover">
 
+
+                        <div class="absolute bottom-5 left-4 transform -translate-y-1/2 ">
+                            <a href="#slide1" class="btn btn-circle">❮</a>
+                            <a href="#slide3" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3"
+                        class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(./Images/1.png)] h-[85vh] bg-cover">
+
+                        <div class="absolute bottom-5 left-4 transform -translate-y-1/2">
+                            <a href="#slide2" class="btn btn-circle">❮</a>
+                            <a href="#slide1" class="btn btn-circle">❯</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class=" h-[20vh] w-1/2 mx-auto text-white p-4 bg-black shadow-lg rounded-xl -translate-y-40 mr-[30vh]">
+
+
+                <h1 class=" text-3xl ">Meet all the heroes from the field</h1>
+                <p>Considered one of the greatest defensemen in NHL history.
+                    Known for his offensive skills and ability to revolutionize the role of defensemen.
+                </p>
 
             </div>
+            <!-- <div
+                class="h-[30vh] w-[100vh] mx-auto text-white p-4 bg-black shadow-lg rounded-xl -translate-y-10 md:block">
+
+
+                <h1 class=" text-xl ">Meet all the heroes from the field</h1>
+                <p>Considered one of the greatest defensemen in NHL history.
+                    Known for his offensive skills and ability to revolutionize the role of defensemen.
+                </p>
+
+            </div> -->
+        </section>
+        <!-- <section class="ml-96 pl-20 mb-20 text-center w-96 ">
+                    <h1 class="text-3xl p-4">Heros Hockeys Club</h1>
+
+                    <p>Uniting passion on the ice, fostering teamwork, and scoring victories one goal at a time.</p>
 
         </section>
 
+        cycle section 3 -->
 
-        <!-- section 2 -->
-
-        <section class="ml-96 pl-20 mb-20 text-center w-96 ">
-            <h1 class="text-3xl p-4">Heros Hockeys Club</h1>
-
-            <p>Uniting passion on the ice, fostering teamwork, and scoring victories one goal at a time.</p>
-
-        </section>
-
-        <!-- cycle section 3 -->
-
-        <section class=" container  flex text-center items-center p-10 gap-20 ">
+        <!-- <section class=" container  flex text-center items-center p-10 gap-20 ">
             <div class="mt-4">
                 <div class="radial-progress  " style="--value:87;" role="progressbar">87%</div>
                 <h1 class="mt-4">Prayer Facility</h1>
@@ -164,9 +180,9 @@
             </div>
 
 
-        </section>
+        </section> -->
         <!-- program Section -->
-        <section class="container ">
+        <!-- <section class="container ">
 
             <div class=" text-center w-80 ">
                 <h1>Match Program Details</h1>
@@ -191,11 +207,11 @@
             </div>
 
 
-        </section>
+        </section> -->
 
     </main>
 
-    <footer class="flex gap-36 p-20 bg-black text-slate-300">
+    <!-- <footer class="flex gap-36 p-20 bg-black text-slate-300">
 
         <div class="gap-4 ">
             <h1 class="pb-4 text-lg">In Stadium</h1>
@@ -234,7 +250,7 @@
 
         </div>
 
-    </footer>
+    </footer> -->
 </body>
 
 </html>
